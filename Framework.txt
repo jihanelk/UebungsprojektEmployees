@@ -1,0 +1,66 @@
+MVP- minimal viable product:
+- nutzung der console
+- Mitarbeiter anlegen
+- Mitarbeiter ausgeben lassen
+- Mitarbeiter löschen
+
+Tools: 
+1. Typescript
+2. SQLite3
+3. Nodemodule: readline sync, sqllite3
+
+Programm:
+
+Klassen:
+- Employee 
+- first name
+- lastname
+- hobby
+- gehalt
+
+- Database Handler
+- Databasefile => constructor
+... functions for database handling
+Database:
+
+Empooyee:
+-name
+-nachname
+gehalt
+
+Hobbies:
+-id
+-location
+-hobby
+-empoyeeId
+
+
+Ablauf beim programmieren:
+1. Erstellen der grundgerüste der klassen
+2. ausarbeitung des database handler das er mit der übergabe von einem parameter eine tablle erstellt( funczion createTable)
+codebsp: 
+databasehander
+
+..databasehander
+
+createDatabase(tableName, columns: String[], values: any[]){
+if()colums.length === values.length 
+else {
+return err
+}
+
+const columsReplacement: String = '('
+columnReplacements = columsReplacement + columns.toString() + ')'
+const valuesReplacement: String = '('
+valuesReplacements = valuesReplacement + columns.toString() + ')'
+db run ('create table ${tableName} ${columnsReplacement} ')
+}
+
+3. alle funktionen die man für empoyee auslagern kann auslagern, alle funktionen für sql handler auslagern
+und coden!
+
+
+
+import { Employee } from "./classes";
+import { Hobbies } from "./classes";
+import { dbHandler } from "./classes";
